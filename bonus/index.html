@@ -11,8 +11,8 @@
 
     <div id="app">
         <h1>Mail list</h1>
-        <ul v-for="mail in mailList" v-show="mailList.length === 10">
-            <li>{{mail}}</li>
+        <ul v-show="mailList.length === 10">
+            <li v-for="mail in mailList">{{mail}}</li>
         </ul>
     </div>
 
